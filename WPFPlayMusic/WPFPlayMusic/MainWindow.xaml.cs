@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+//Custom libs
+using WPFPlayMusic.Models;
 
 namespace WPFPlayMusic
 {
@@ -25,11 +27,7 @@ namespace WPFPlayMusic
         {
             InitializeComponent();
             Song song = new Song();
-            song.IDMusic = 1;
-            song.SName = "Palm Trees";
-            song.SArtist = "Baxter Dury";
-            song.SDuracion = "00:03:50";
-            song.SGenero = "Indie";
+            
 
             string txtSongName = song.SName;
             TextBoxSongName.Text = "Hola";

@@ -55,7 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Song.cs" />
+    <Compile Include="Controller\CtrlMusic.cs" />
+    <Compile Include="Models\Song.cs" />
+    <Compile Include="Models\Users.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

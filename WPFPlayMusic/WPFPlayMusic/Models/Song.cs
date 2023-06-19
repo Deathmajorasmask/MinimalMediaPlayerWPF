@@ -1,8 +1,7 @@
-﻿namespace WPFPlayMusic
+﻿namespace WPFPlayMusic.Models
 {
     internal class Song
     {
-
 		public int IDMusic
 		{ get; set; }
 
