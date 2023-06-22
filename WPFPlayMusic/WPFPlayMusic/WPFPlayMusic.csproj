@@ -97,5 +97,26 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Component\Images\control_play_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Component\Images\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Component\Images\control_pause_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Component\Images\control_stop_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Component\Images\control_volumeplus_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Component\Images\control_volumeminus_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Component\Images\control_volumemute_blue.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

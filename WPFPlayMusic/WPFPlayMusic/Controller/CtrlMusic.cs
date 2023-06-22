@@ -12,7 +12,7 @@ namespace WPFPlayMusic.Controller
     internal class CtrlMusic
     {
         Song song = new Song();
-        CtrlMusic()
+        public CtrlMusic()
         {
             song.IDMusic = 0;
             song.SName = "";
@@ -33,7 +33,7 @@ namespace WPFPlayMusic.Controller
 
         public void playSong()
         {
-            // TODO:
+
         }
 
         public void pauseSong()
