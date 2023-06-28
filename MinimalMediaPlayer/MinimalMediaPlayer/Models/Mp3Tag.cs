@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace WPFPlayMusic.Models
+namespace MinimalMediaPlayer.Models
 {
     internal class Mp3Tag
     {

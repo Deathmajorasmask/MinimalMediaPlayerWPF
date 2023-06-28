@@ -1,7 +1,7 @@
-﻿<Application x:Class="WPFPlayMusic.App"
+﻿<Application x:Class="MinimalMediaPlayer.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WPFPlayMusic"
+             xmlns:local="clr-namespace:MinimalMediaPlayer"
              Startup="Application_Startup">
     <Application.Resources>
          

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 // Custom libs
-using WPFPlayMusic.Models;
+using MinimalMediaPlayer.Models;
 
-namespace WPFPlayMusic.Controller
+namespace MinimalMediaPlayer.Controller
 {
     internal class CtrlMusic
     {

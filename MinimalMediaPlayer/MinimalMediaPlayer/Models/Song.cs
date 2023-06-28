@@ -1,4 +1,4 @@
-﻿namespace WPFPlayMusic.Models
+﻿namespace MinimalMediaPlayer.Models
 {
     internal class Song
     {

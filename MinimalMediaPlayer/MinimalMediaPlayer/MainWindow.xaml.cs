@@ -17,9 +17,9 @@ using Microsoft.Win32;
 using System.Windows.Threading;
 using System.Windows.Controls.Primitives;
 //Custom libs
-using WPFPlayMusic.Controller;
+using MinimalMediaPlayer.Controller;
 
-namespace WPFPlayMusic
+namespace MinimalMediaPlayer
 {
 	public partial class MainWindow : Window
 	{

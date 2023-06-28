@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WPFPlayMusic.Properties
+namespace MinimalMediaPlayer.Properties
 {
 
 
