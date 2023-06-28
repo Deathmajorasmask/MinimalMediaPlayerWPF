@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-28T07:43:47.380Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="bZo5-uuy5x6LPw5rsiC1" version="21.0.10" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-28T07:44:48.515Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="6ejx4SCtc53fPuy-7Prr" version="21.0.10" type="github">
   <diagram name="Página-1" id="LNIsn7Z285M69_nVjDnf">
     <mxGraphModel dx="1372" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -61,6 +61,9 @@
         <mxCell id="Uiy9q4mawroTFAhEAylb-8" value="Actualmente no es usado dentro del programa" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontStyle=6;startSize=30;" vertex="1" parent="1">
           <mxGeometry x="100" y="280" width="270" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="Uiy9q4mawroTFAhEAylb-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Uiy9q4mawroTFAhEAylb-10" target="Uiy9q4mawroTFAhEAylb-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Uiy9q4mawroTFAhEAylb-10" value="MP3Tag" style="swimlane;fontStyle=6;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;enumerate=0;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="480" y="320" width="220" height="240" as="geometry">
             <mxRectangle x="480" y="40" width="80" height="30" as="alternateBounds" />
@@ -88,6 +91,9 @@
         </mxCell>
         <mxCell id="Uiy9q4mawroTFAhEAylb-11" value="-&lt;span style=&quot;font-size: 15px;&quot;&gt;	&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;/span&gt;Mp3Reader : STRING" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=15;fontStyle=1" vertex="1" parent="Uiy9q4mawroTFAhEAylb-10">
           <mxGeometry y="210" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uiy9q4mawroTFAhEAylb-18" value="Dependencia usada para leer metadato de archivo" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontStyle=6;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="480" y="600" width="220" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
