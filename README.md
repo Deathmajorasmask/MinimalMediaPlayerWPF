@@ -77,7 +77,7 @@ TagLib-Sharp is available on NuGet: https://www.nuget.org/packages/TagLibSharp
    ```sh
    git clone https://github.com/Deathmajorasmask/MinimalMediaPlayerWPF.git
    ```
-2. Open PF MinimalMediaPlayer.sln in Visual Studio.
+2. Open MinimalMediaPlayer.sln in Visual Studio.
 
 3. Press 'Start'.
 
@@ -114,4 +114,4 @@ Project Link: [https://github.com/Deathmajorasmask/MinimalMediaPlayerWPF](https:
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[screenshot]: images/MinimalMediaPlayer_1.PNG
+[screenshot4]: images/MinimalMediaPlayer_1.PNG
