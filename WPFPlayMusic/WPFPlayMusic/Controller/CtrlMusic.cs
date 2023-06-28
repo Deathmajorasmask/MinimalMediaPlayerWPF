@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 // Custom libs
 using WPFPlayMusic.Models;
 
@@ -11,54 +10,35 @@ namespace WPFPlayMusic.Controller
 {
     internal class CtrlMusic
     {
-        Song song = new Song();
+        public Song song = new Song();
+        Mp3Tag mp3Reader = new Mp3Tag();
         public CtrlMusic()
         {
             song.IDMusic = 0;
-            song.SName = "";
-            song.SArtist = "";
-            song.SDuracion = "";
-            song.SGenero = "";
-            song.SGenero = "";
-        }
-
-        public void AddSong(string SName, string SArtist, string SDuracion, string SGenero)
-        {
-            song.IDMusic = 1;
-            song.SName = SName;
-            song.SArtist = SArtist;
-            song.SDuracion = SDuracion;
-            song.SGenero = SGenero;
-        }
-
-        public void playSong()
-        {
+            song.Title = "";
+            song.Artist = "";
+            song.Album = "";
+            song.Year = "";
+            song.Genere = "";
+            song.Comment = "";
 
         }
 
-        public void pauseSong()
+        public void AddSong(string pathtofile)
         {
-            // TODO
+            mp3Reader.Mp3Reader(pathtofile);
+            song.IDMusic = 0;
+            song.Title = mp3Reader.Title;
+            song.Artist = mp3Reader.Artist;
+            song.Album = mp3Reader.Album;
+            song.Year = mp3Reader.Year;
+            song.Genere = mp3Reader.Genere;
+            song.Comment = mp3Reader.Comment;
         }
 
-        public void stopSong()
+        public string getTitle()
         {
-            // TODO
-        }
-
-        public void nextSong()
-        {
-            // TODO
-        }
-
-        public void skipSong()
-        {
-            // TODO
-        }
-
-        private void loadSong()
-        {
-            // TODO
+            return song.Title;
         }
     }
 }

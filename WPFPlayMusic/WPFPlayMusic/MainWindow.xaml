@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="WPF Media Player" Height="300" Width="300"
+        Title="Minimal Media Player" Height="300" Width="330"
         MinWidth="300" SizeToContent="WidthAndHeight">
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Open" CanExecute="Open_CanExecute" Executed="Open_Executed" />
@@ -19,31 +19,35 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <ToolBar>
-            <Button Command="ApplicationCommands.Open">
+            <Button Command="ApplicationCommands.Open" TabIndex="1">
                 <Image Source="Component/Images/folder.png" Height="19" Width="19" />
             </Button>
             <Separator />
-            <Button Command="MediaCommands.Play">
+            <Button Command="MediaCommands.Play" TabIndex="2">
                 <Image Source="Component/Images/control_play_blue.png" Height="19" Width="19" />
             </Button>
-            <Button Command="MediaCommands.Pause">
+            <Button Command="MediaCommands.Pause" TabIndex="3">
                 <Image Source="Component/Images/control_pause_blue.png" Height="19" Width="19" />
             </Button>
-            <Button Command="MediaCommands.Stop">
+            <Button Command="MediaCommands.Stop" TabIndex="4">
                 <Image Source="Component/Images/control_stop_blue.png" Height="19" Width="19"/>
             </Button>
-            <Button Click="btnVolumeP_Click">
+            <Button Name ="btnLoop" Click="btnLoop_Click" TabIndex="5">
+                <Image Source="Component/Images/control_loop_blue.png" Height="19" Width="19"/>
+            </Button>
+            <Button Click="btnVolumeP_Click" TabIndex="6">
                 <Image Source="Component/Images/control_volumeplus_blue.png" Height="19" Width="19"/>
             </Button>
-            <Button Click="btnVolumeM_Click">
+            <Button Click="btnVolumeM_Click" TabIndex="7">
                 <Image Source="Component/Images/control_volumeminus_blue.png" Height="19" Width="19"/>
             </Button>
-            <Button Click="btnVolumeMute_Click">
+            <Button Click="btnVolumeMute_Click" TabIndex="8">
                 <Image Source="Component/Images/control_volumemute_blue.png" Height="19" Width="19"/>
             </Button>
+            <TextBlock Name="lblSongName" VerticalAlignment="Center" HorizontalAlignment="Center">None</TextBlock>
         </ToolBar>
 
-        <MediaElement Name="mePlayer" Grid.Row="1" LoadedBehavior="Manual" Stretch="None" />
+        <MediaElement Name="mePlayer" Grid.Row="1" LoadedBehavior="Manual" Stretch="None" MediaEnded="mediaElement_OnMediaEnded" />
 
         <StatusBar Grid.Row="2">
             <StatusBar.ItemsPanel>
@@ -53,6 +57,7 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                     </Grid>
                 </ItemsPanelTemplate>
@@ -61,7 +66,7 @@
                 <TextBlock Name="lblProgressStatus">00:00:00</TextBlock>
             </StatusBarItem>
             <StatusBarItem Grid.Column="1" HorizontalContentAlignment="Stretch">
-                <Slider Name="sliProgress" Thumb.DragStarted="sliProgress_DragStarted"  Thumb.DragCompleted="sliProgress_DragCompleted" ValueChanged="sliProgress_ValueChanged" />
+                <Slider Name="sliProgress" Thumb.DragStarted="sliProgress_DragStarted"  Thumb.DragCompleted="sliProgress_DragCompleted" ValueChanged="sliProgress_ValueChanged" TabIndex="9" />
             </StatusBarItem>
             <StatusBarItem Grid.Column="2">
                 <ProgressBar Name="pbVolume" Width="50" Height="12" Maximum="1" Value="{Binding ElementName=mePlayer, Path=Volume}" />
