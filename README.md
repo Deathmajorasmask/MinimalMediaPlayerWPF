@@ -82,7 +82,7 @@ TagLib-Sharp is available on NuGet: https://www.nuget.org/packages/TagLibSharp
 3. Press 'Start'.
 
 ## Screenshots
-![Product Name Screen Shot][screenshot04]
+![Product Name Screen Shot][screenshot]
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -114,4 +114,4 @@ Project Link: [https://github.com/Deathmajorasmask/MinimalMediaPlayerWPF](https:
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[screenshot4]: images/MinimalMediaPlayer_1.PNG
+[screenshot]: images/MinimalMediaPlayer_1.PNG
